@@ -1,20 +1,13 @@
-import { Recipe } from "./Recipe";
-import recipes from '../recipes.json'
+import { GlobalStyle } from './GlobalStyle';
+
+import user from '../user.json';
+import { User } from './User/User';
 
 export const App = () => {
-  return <div>
-    <Recipe/>
-    </div>;
+  return (
+    <>
+    <User user={user}/>
+      <GlobalStyle/>
+    </>
+  );
 };
-
-
-// style={{
-//   height: '100vh',
-//   display: 'flex',
-//   justifyContent: 'center',
-//   alignItems: 'center',
-//   fontSize: 40,
-//   color: '#010101'
-// }}
-// >
-// React homework template
