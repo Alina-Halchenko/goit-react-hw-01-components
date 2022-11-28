@@ -11,6 +11,7 @@ export const App = () => {
     <>
     <User user={user}/>
     <Statistics title="Upload stats" data={data}/>
+    {/* <Statistics data={data} /> */}
       <GlobalStyle/>
     </>
   );
