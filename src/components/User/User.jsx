@@ -11,9 +11,9 @@ import { UserProfile,
 } from './User.styled'
 
 
-export const User = ({user: 
+export const User = (
   {avatar, username, tag, location, stats:
-    {followers, views, likes}}}) => {
+    {followers, views, likes}}) => {
   return <UserProfile>
     <UserDescription>
       <UserAvatar src={avatar} alt="User avatar"/>
@@ -42,7 +42,7 @@ export const User = ({user:
 };
 
 User.propTypes = {
-  user: PropTypes.shape({
+  
     avatar: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
@@ -52,5 +52,5 @@ User.propTypes = {
       views: PropTypes.number.isRequired,
       likes: PropTypes.number.isRequired,
     }).isRequired,
-  }).isRequired
+
 };

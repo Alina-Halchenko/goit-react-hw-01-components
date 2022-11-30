@@ -23,7 +23,13 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 
 export const FriendStatus = styled.span`
   height: 12px;
   width: 12px;
-  background-color: ${prop => `${prop.color}`};
+  background-color: ${prop => {
+    if(prop.color) {
+      return `green`
+    } else {
+      return `red`
+    }
+  }};
   border-radius: 50%;
   display: inline-block;
 `
