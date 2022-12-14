@@ -6,7 +6,7 @@ import { FriendStatus, FriendImage, FriendName} from './FriendList.styled'
 export const FriendListItem = ({ friend:{isOnline, avatar, name} }) => {
   return (
     <Fragment>
-    <FriendStatus color={isOnline}></FriendStatus>
+    <FriendStatus color={isOnline.toString()}></FriendStatus>
     <FriendImage src={avatar} alt="User avatar" width="48" />
     <FriendName>{name}</FriendName>
     </Fragment>
@@ -19,6 +19,6 @@ FriendListItem.propTypes = {
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
-      avatar: PropTypes.number.isRequired,
+      avatar: PropTypes.string.isRequired,
   }).isRequired
 };

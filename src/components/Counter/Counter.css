@@ -1,0 +1,14 @@
+.Counter {
+  margin: 10px auto 20px auto;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.Counter__controls {
+  background-color: teal;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}

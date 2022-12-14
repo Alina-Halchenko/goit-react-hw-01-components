@@ -1,0 +1,27 @@
+.ColorPicker__option {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  transition: transform 250ms linear;
+}
+
+.ColorPicker__option--active{
+  transform: scale(1.1);
+}
+
+.ColorPicker div {
+  display: flex;
+  gap: 20px;
+}
+
+.ColorPicker {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid black;
+}
+

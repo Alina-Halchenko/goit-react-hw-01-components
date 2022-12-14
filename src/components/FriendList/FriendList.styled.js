@@ -24,7 +24,7 @@ export const FriendStatus = styled.span`
   height: 12px;
   width: 12px;
   background-color: ${prop => {
-    if(prop.color) {
+    if(prop.color === "true") {
       return `green`
     } else {
       return `red`
